@@ -1,0 +1,21 @@
+1.pip install Scrapy
+3. pip freeze>requirements.txt
+2. scrapy startproject myproject
+    # cd myproject
+    # then you will get a running command/starting command
+
+4. create a spipder.py/ anyname.py inside spiders folder inside your project
+5. After this you have work on newly created file inside the spiders
+    6. you must mention the name of spider which you wannt user like
+            class MySpider(scrapy.Spider):
+                name = 'myspider'
+                list = read_url()
+                start_urls = list
+6. scrapy shell "url to scrap" # use this command to execute every xpath before running actual bot
+# to ensure that you are getting the right data (don't remove double quote)
+    # response.xpath('//title') #try witht his method
+7. itmes.py er moddhe thaka class k spider er moddhe clal kore items variable k use kori.. eta kaj easy hoy
+
+8. finally run .. scrapy crawl myspidername
+or you can run by specifying the csv, json, excel format
+
